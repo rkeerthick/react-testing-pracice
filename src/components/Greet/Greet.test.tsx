@@ -4,7 +4,7 @@ import Greet from "./Greet";
 describe("Greet", () => {
   test("Greet component is tested", () => {
     render(<Greet />);
-    const value = screen.getByText("Greet");
+    const value = screen.getByText(/greet /i);
     expect(value).toBeInTheDocument();
   });
 });
